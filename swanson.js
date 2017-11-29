@@ -12,10 +12,25 @@ document.getElementById('xhr').addEventListener("click", () => {
       let data = JSON.parse(XHR.responseText);
       quoteTxt.innerText = data;
     }
-    else {
-        console,log("error!");
-    }
   }
   XHR.open("GET", url);
   XHR.send();
 })
+
+//Using Fetch API (Fetch button):
+document.getElementById('fetch').addEventListener("click", () => {
+    fetch(url)
+    .then(function(response) {
+      if(!response.ok) {
+        throw Error(response.status)
+      }
+      let data = response.json();
+      return data
+    })
+    .then(function(data) {
+      quoteTxt.innerText = data[0];
+    })
+    .catch(function(err) {
+      console.log(err);
+    })
+  })
