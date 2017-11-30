@@ -3,10 +3,10 @@
 A Ron Swanson Quote generator that uses AJAX requests to generate a random quote from the great man himself.
 
 It makes a request using four different means:
-    * XMLHTTPRequest
-    * Fetch API
-    * jQuery AJAX
-    * Axios library
+- XMLHTTPRequest
+- Fetch API
+- jQuery AJAX
+- Axios library
 
 ## Code Example
 
