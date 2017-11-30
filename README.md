@@ -8,7 +8,7 @@ It makes a request using four different means:
 - jQuery AJAX
 - Axios library
 
-## Code Example
+## Instructions
 
 To have a play, simply clone the repo and open the index.html file.
 
